@@ -1,0 +1,70 @@
+@use '../../../styles/tokens' as *;
+
+.btn {
+  border: none;
+  border-radius: 7px;
+  padding: 8px 14px;
+  font: 700 0.8rem var(--sans);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: filter 0.15s, background 0.15s;
+  white-space: nowrap;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.primary {
+  background: var(--blue);
+  color: #fff;
+
+  &:hover:not(:disabled) {
+    filter: brightness(1.08);
+  }
+}
+
+.ghost {
+  background: #fff;
+  border: 1.5px solid var(--border);
+  color: var(--text);
+
+  &:hover:not(:disabled) {
+    background: var(--surface2);
+  }
+}
+
+.danger {
+  background: var(--red);
+  color: #fff;
+
+  &:hover:not(:disabled) {
+    filter: brightness(1.08);
+  }
+}
+
+.green {
+  background: var(--green);
+  color: #fff;
+
+  &:hover:not(:disabled) {
+    filter: brightness(1.08);
+  }
+}
+
+.amber {
+  background: var(--amber);
+  color: #fff;
+
+  &:hover:not(:disabled) {
+    filter: brightness(1.08);
+  }
+}
+
+.sm {
+  padding: 6px 10px;
+  font-size: 0.74rem;
+}

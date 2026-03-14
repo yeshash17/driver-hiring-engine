@@ -1,0 +1,60 @@
+.tabBar {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 10px;
+}
+
+.tab {
+  padding: 8px 16px;
+  border-radius: 7px 7px 0 0;
+  border: none;
+  background: var(--surface3);
+  color: var(--muted);
+  font: 600 0.8rem var(--sans);
+  cursor: pointer;
+  transition: 0.15s;
+  position: relative;
+
+  &:hover {
+    background: var(--border);
+    color: var(--text);
+  }
+
+  &.active {
+    background: var(--blue);
+    color: #fff;
+  }
+}
+
+// Pill tabs (mtab style)
+.pillBar {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.pillTab {
+  padding: 6px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 999px;
+  font: 600 0.76rem var(--sans);
+  cursor: pointer;
+  color: var(--muted);
+  background: #fff;
+  transition: 0.15s;
+
+  &:hover {
+    border-color: var(--blue);
+    color: var(--blue);
+  }
+
+  &.active {
+    background: var(--navy);
+    color: #fff;
+    border-color: var(--navy);
+  }
+}

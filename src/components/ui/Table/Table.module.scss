@@ -1,0 +1,39 @@
+.tblWrap {
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.79rem;
+  }
+
+  th {
+    background: var(--navy);
+    color: rgba(255, 255, 255, 0.86);
+    padding: 9px 10px;
+    text-align: left;
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 9px 10px;
+    border-bottom: 1px solid var(--surface3);
+    vertical-align: top;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  tr:hover td {
+    background: #fafcff;
+  }
+}
+
+.maxHeight {
+  max-height: 620px;
+}

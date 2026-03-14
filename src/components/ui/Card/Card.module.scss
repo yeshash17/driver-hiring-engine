@@ -1,0 +1,26 @@
+.card {
+  background: #fff;
+  border-radius: var(--r);
+  box-shadow: var(--shadow);
+  padding: 16px 18px;
+  margin-bottom: 16px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--surface3);
+  margin-bottom: 12px;
+}
+
+.cardTitle {
+  font: 800 0.9rem var(--head);
+}
+
+.locked {
+  opacity: 0.65;
+  pointer-events: none;
+}

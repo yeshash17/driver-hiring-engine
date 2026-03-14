@@ -1,0 +1,52 @@
+.uploadWrap {
+  max-width: 650px;
+  margin: 30px auto;
+}
+
+.schemaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.schemaTable {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+
+  .schemaHeader {
+    background: var(--navy);
+    color: #fff;
+    padding: 7px 12px;
+    font: 0.75rem var(--mono);
+    letter-spacing: 0.05em;
+  }
+
+  table {
+    width: 100%;
+    font-size: 0.76rem;
+    border-collapse: collapse;
+
+    th {
+      background: var(--surface3);
+      padding: 6px 10px;
+      text-align: left;
+      font-weight: 700;
+    }
+
+    td {
+      padding: 6px 10px;
+      border-top: 1px solid var(--border);
+    }
+
+    code {
+      font-family: var(--mono);
+      font-size: 0.82em;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.empty {
+  text-align: center;
+  padding: 54px 20px;
+  color: var(--muted);
+
+  .icon {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+  }
+
+  .heading {
+    font: 800 1rem var(--head);
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .description {
+    font-size: 0.82rem;
+  }
+}

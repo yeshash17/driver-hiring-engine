@@ -1,0 +1,76 @@
+.comboWrap {
+  position: relative;
+  width: 100%;
+
+  input {
+    width: 100%;
+    padding: 7px 9px;
+    border: 1.5px solid var(--border);
+    border-radius: 7px;
+    font-size: 0.8rem;
+    background: #fff;
+    color: var(--text);
+
+    &:focus {
+      outline: none;
+      border-color: var(--blue);
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.comboDrop {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1.5px solid var(--blue);
+  border-radius: 8px;
+  z-index: 40;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: var(--shadow2);
+}
+
+.comboOpt {
+  padding: 7px 10px;
+  cursor: pointer;
+  font-size: 0.78rem;
+  border-bottom: 1px solid var(--surface3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover,
+  &.active {
+    background: var(--surface3);
+  }
+
+  .optId {
+    font-family: var(--mono);
+    font-weight: 700;
+  }
+
+  .optMeta {
+    color: var(--muted);
+    font-size: 0.72rem;
+    margin-left: 6px;
+  }
+}
+
+.noMatch {
+  color: var(--muted);
+  font-style: italic;
+  pointer-events: none;
+  padding: 7px 10px;
+  font-size: 0.78rem;
+}

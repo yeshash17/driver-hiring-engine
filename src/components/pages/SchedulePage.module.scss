@@ -1,0 +1,35 @@
+.scheduleMatrix {
+  max-height: 70vh;
+}
+
+.shiftCell {
+  background: #e8f4fd;
+  border-radius: 5px;
+  padding: 4px 7px;
+  margin-bottom: 3px;
+  font-size: 0.76rem;
+  border-left: 3px solid var(--blue);
+
+  strong {
+    display: block;
+  }
+
+  .cellMeta {
+    color: var(--muted);
+    font-size: 0.7rem;
+  }
+
+  .cellCar {
+    color: var(--muted);
+    font-size: 0.68rem;
+  }
+}
+
+.branchHeader {
+  font: 0.8rem var(--mono);
+  font-weight: 700;
+  background: var(--navy);
+  color: #fff;
+  padding: 7px 12px;
+  border-radius: 7px 7px 0 0;
+}

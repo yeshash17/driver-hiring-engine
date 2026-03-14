@@ -1,0 +1,27 @@
+.topbar {
+  height: 56px;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 18px;
+  flex-shrink: 0;
+}
+
+.title {
+  font: 800 1rem var(--head);
+}
+
+.chip {
+  background: var(--surface3);
+  border: 1px solid var(--border);
+  padding: 5px 10px;
+  border-radius: 999px;
+  font: 0.72rem var(--mono);
+  color: var(--muted);
+}
+
+.spacer {
+  flex: 1;
+}

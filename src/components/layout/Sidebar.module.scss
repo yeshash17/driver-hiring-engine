@@ -1,0 +1,99 @@
+.sidebar {
+  width: 250px;
+  background: var(--navy);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.logo {
+  padding: 18px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  h1 {
+    font: 800 1.25rem var(--head);
+  }
+
+  .accent {
+    color: var(--amber);
+  }
+
+  p {
+    font: 400 0.68rem var(--mono);
+    opacity: 0.55;
+    margin-top: 4px;
+  }
+}
+
+.sbWrap {
+  overflow: auto;
+  flex: 1;
+  padding: 10px 8px 14px;
+}
+
+.selBox {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  label {
+    display: block;
+    font-size: 0.66rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin-bottom: 5px;
+  }
+
+  select {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    padding: 7px 9px;
+    font-size: 0.8rem;
+  }
+}
+
+.navSection {
+  font-size: 0.64rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.35;
+  padding: 8px 9px 4px;
+}
+
+.navItem {
+  padding: 8px 10px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.84rem;
+  font-weight: 600;
+  margin: 2px 4px;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+  }
+
+  &.active {
+    background: var(--blue);
+    color: #fff;
+  }
+}
+
+.sbFoot {
+  padding: 12px 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.69rem;
+  opacity: 0.5;
+}

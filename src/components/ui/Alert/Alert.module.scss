@@ -1,0 +1,31 @@
+.alert {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.info {
+  background: #e9f4fe;
+  color: #154360;
+  border-left: 4px solid var(--blue);
+}
+
+.warn {
+  background: #fff5df;
+  color: #7c5a10;
+  border-left: 4px solid var(--amber);
+}
+
+.success {
+  background: #eafbf3;
+  color: #1a6a4d;
+  border-left: 4px solid var(--green);
+}
+
+.danger {
+  background: #feecec;
+  color: #8a2620;
+  border-left: 4px solid var(--red);
+}

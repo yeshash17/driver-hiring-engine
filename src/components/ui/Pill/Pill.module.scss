@@ -1,0 +1,10 @@
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--navy);
+  color: #fff;
+  border-radius: 6px;
+  padding: 3px 8px;
+  font: 500 0.7rem var(--mono);
+}

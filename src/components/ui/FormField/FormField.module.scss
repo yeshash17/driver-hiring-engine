@@ -1,0 +1,28 @@
+.fg {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    display: block;
+    font-size: 0.69rem;
+    font-weight: 700;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  input,
+  select {
+    padding: 7px 9px;
+    border: 1.5px solid var(--border);
+    border-radius: 7px;
+    font-size: 0.8rem;
+    background: #fff;
+    min-width: 130px;
+    color: var(--text);
+
+    &:focus {
+      outline: none;
+      border-color: var(--blue);
+    }
+  }
+}

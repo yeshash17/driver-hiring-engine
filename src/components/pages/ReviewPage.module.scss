@@ -1,0 +1,192 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-end;
+  padding: 12px 0 16px;
+
+  .fg {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 140px;
+
+    label {
+      font-size: 0.66rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    select, input {
+      padding: 7px 9px;
+      border: 1.5px solid var(--border);
+      border-radius: 7px;
+      font-size: 0.8rem;
+      background: #fff;
+
+      &:focus {
+        outline: none;
+        border-color: var(--blue);
+      }
+    }
+  }
+}
+
+.empRow {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 12px;
+  align-items: start;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.empLeft {
+  min-width: 0;
+}
+
+.empHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.empId {
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.empName {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.empMeta {
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.shiftCard {
+  margin: 6px 0 0;
+  padding: 10px 12px;
+  box-shadow: none;
+  border: 1px solid var(--surface3);
+  border-radius: var(--r);
+  background: #fff;
+}
+
+.shiftCardGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr 0.8fr 1fr auto;
+  gap: 10px;
+  align-items: start;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.sched {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  strong {
+    font-size: 0.86rem;
+  }
+}
+
+.subtle {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.mini {
+  font-size: 0.72rem;
+  line-height: 1.8;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mono {
+  font-family: var(--mono);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.weekSwapBox {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.flagBox {
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.weekbar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.route {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+
+  .stop {
+    background: #eef3f8;
+    border-radius: 999px;
+    padding: 3px 8px;
+    font: 0.67rem var(--mono);
+
+    &.villa {
+      background: #ffe9cc;
+    }
+  }
+
+  .arrow {
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+}
+
+.exportSection {
+  min-width: 360px;
+}
+
+.swapApplied {
+  border-left: 3px solid var(--green);
+}
+
+.emptyMsg {
+  color: var(--muted);
+  font-size: 0.8rem;
+  padding: 8px 0;
+}
+
+.rowDivider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}

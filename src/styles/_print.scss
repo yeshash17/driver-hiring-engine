@@ -1,0 +1,22 @@
+@media print {
+  .sidebar,
+  .topbar,
+  .btn,
+  .nav,
+  .selbox,
+  .sbfoot {
+    display: none !important;
+  }
+
+  .main,
+  .content,
+  .page {
+    overflow: visible !important;
+    height: auto !important;
+  }
+
+  .card {
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+}
